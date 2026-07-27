@@ -1,0 +1,76 @@
+
+# AutoSeller Config
+autosell:
+  check-interval-seconds: 3
+  min-amount-to-keep: 0 # сколько оставлять в инвентаре (для анархии 0)
+
+economy:
+  points-name: "Очки скупщика"
+
+categories:
+  ores:
+    name: "&b&lРуды и слитки"
+    icon: DIAMOND
+    slot: 11
+    items:
+      DIAMOND: { price: 50, points: 2 }
+      EMERALD: { price: 40, points: 2 }
+      DIAMOND_BLOCK: { price: 450, points: 18 }
+      EMERALD_BLOCK: { price: 360, points: 18 }
+      GOLD_INGOT: { price: 15, points: 1 }
+      IRON_INGOT: { price: 8, points: 1 }
+      GOLD_BLOCK: { price: 135, points: 9 }
+      IRON_BLOCK: { price: 72, points: 9 }
+      NETHERITE_INGOT: { price: 500, points: 25 }
+      NETHERITE_SCRAP: { price: 150, points: 7 }
+      LAPIS_LAZULI: { price: 5, points: 1 }
+      REDSTONE: { price: 3, points: 1 }
+      COAL: { price: 2, points: 1 }
+      QUARTZ: { price: 4, points: 1 }
+  mobdrops:
+    name: "&c&lРесурсы нежити"
+    icon: ROTTEN_FLESH
+    slot: 13
+    items:
+      ROTTEN_FLESH: { price: 1, points: 1 }
+      BONE: { price: 3, points: 1 }
+      STRING: { price: 3, points: 1 }
+      SPIDER_EYE: { price: 4, points: 1 }
+      GUNPOWDER: { price: 5, points: 1 }
+      ENDER_PEARL: { price: 20, points: 2 }
+      BLAZE_ROD: { price: 30, points: 3 }
+      GHAST_TEAR: { price: 50, points: 4 }
+      WITHER_SKELETON_SKULL: { price: 100, points: 10 }
+      SLIME_BALL: { price: 6, points: 1 }
+  crops:
+    name: "&a&lРесурсы культур"
+    icon: WHEAT
+    slot: 15
+    items:
+      WHEAT: { price: 2, points: 1 }
+      POTATO: { price: 2, points: 1 }
+      CARROT: { price: 2, points: 1 }
+      BEETROOT: { price: 2, points: 1 }
+      SUGAR_CANE: { price: 2, points: 1 }
+      MELON_SLICE: { price: 1, points: 1 }
+      PUMPKIN: { price: 5, points: 1 }
+      COCOA_BEANS: { price: 3, points: 1 }
+      SWEET_BERRIES: { price: 2, points: 1 }
+      BREAD: { price: 6, points: 1 }
+
+boosters:
+  price-points: 150
+  duration-minutes: 30
+  multiplier: 2.0
+
+messages:
+  sold: "&aПродано &f%amount%x %item% &aза &6%money%$ &7и &e%points% очков"
+  no-items: "&cУ тебя нет предметов для продажи!"
+  autosell-enabled: "&aАвтоскупка включена!"
+  autosell-disabled: "&cАвтоскупка выключена!"
+  booster-bought: "&aТы купил x2 бустер на категорию &e%category% &aна %time% мин!"
+  not-enough-points: "&cНедостаточно очков! Нужно %need%, у тебя %have%"
+  booster-active: "&eБустер на %category% уже активен!"
+
+placeholders:
+  top-format: "&e#%pos% &f%player% &7- &e%points% очков"
